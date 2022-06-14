@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="passport" class="com.te.customer.passport.Passport">
+<property name="passNum" value="5242"></property>
+<property name="dateOfIssue" value="2021-06-10"></property>
+<property name="dateOfExpiry" value="2023-06-10"></property>
+</bean> 
+<bean id="employee" class="com.te.customer.passport.Employee" autowire="byName">
+<property name="empId" value="44"></property>
+<property name="empName" value="Manikandan"></property>
+</bean>
+</beans>

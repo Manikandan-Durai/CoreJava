@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="customer" class="com.te.customer.demo.Customer">
+<property name="custId" value="123"></property>
+<property name="custName" value="Manikandan"></property>
+<property name="emailId" value="manikandan.dhurairaj@gmail.com"></property>
+<property name="contactNo" value="8220747735"></property>
+</bean>
+<bean id="membership" class="com.te.customer.demo.MemberShip">
+<property name="membershipId" value="822"></property>
+<property name="membershipType" value="Annual"></property>
+<property name="visitPerYear" value="4"></property>
+<property name="customer" ref="customer"></property>
+</bean>
+</beans>
